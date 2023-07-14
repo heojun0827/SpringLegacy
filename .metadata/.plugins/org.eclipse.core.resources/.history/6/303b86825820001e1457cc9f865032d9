@@ -1,0 +1,18 @@
+import java.util.HashSet;
+
+public class Test {
+	public static void main(String[] args) {
+		
+		HashSet<String> s1 = new HashSet<>();
+		s1.add("사과");
+		s1.add("딸기");
+		s1.add("키위");
+		s1.add("귤");
+		
+		HashSet<String> s1 = new HashSet<>();
+		s1.add("사과");
+		s1.add("딸기");
+		s1.add("키위");
+		s1.add("귤");
+	}
+}

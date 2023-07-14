@@ -1,0 +1,6 @@
+package com.tjoeun.domain;
+
+@Data
+public class Book {
+
+}

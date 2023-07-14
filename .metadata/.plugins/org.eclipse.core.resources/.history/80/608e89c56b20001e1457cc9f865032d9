@@ -1,0 +1,7 @@
+package com.tjoeun.dto;
+
+public class Member {
+
+	private int id;
+	private String password;
+}

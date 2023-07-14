@@ -1,0 +1,6 @@
+package com.tjoeun.controller;
+
+@Controller
+public class WelcomeController {
+	
+}

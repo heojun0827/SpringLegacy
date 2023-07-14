@@ -1,0 +1,41 @@
+package com.tjoeun.repository;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.tjoeun.domain.Book;
+
+public class BookRepositoryImpl implements BookRepository {
+	
+	private List<Book> listOfBooks = new ArrayList<Book>();
+	
+	public BookRepositoryImpl() {
+		Book book1 = new Book("ISBN-13", "난생처음 자바", 29000);
+		Book book2 = new Book("ISBN-14", "로마인 이야기", 10000);
+		Book book3 = new Book("ISBN-15", "실무 엑셀", 21000);
+		
+		book1.setAuthor("우재남");
+		book1.setDescription("이 책은 초보자에게 어려운 자바 개념을 쉽게 이해시켜주는 책");
+		book1.setPublisher("한빛아카데미");
+		book1.setUnitsInstock(200);
+		book1.setReleaseDate("2023/06/30");
+		
+		book2.setAuthor("시오노나나미 ");
+		book2.setDescription("  『로마인 이야기』는 방대한 자료를 취재, 정리해가면서 엮어간 거대한 로마 통사이면서 현대를 어떻게 살아가야 하는지에 대한 지혜를 가르쳐주는 훌륭한 지침서라 할 수 있을 것이다. 서양인에 의해 씌어진 서양서보다 이 『로마인 이야기』는 서양의 역사에 대해 냉정한 판단을 내렸을지도 모른다. 너무나 당연시하여 의문조차 갖지 않는 조그만 사실들에 대해 집요한 의문을 가지면서 크나큰 역사적 의문을 풀어가는 작가 특유의 방법이 서양문화에 속하지 않은 독자로 하여금 그녀의 저작들을 읽는 데 훨씬 도움을 줄지도 모른다. 그리하여 자신의 문화를 상대화할 수 있는 시야를 갖게 해줄 것이다.");
+		book2.setPublisher("한길사");
+		book2.setUnitsInstock(100);
+		book2.setReleaseDate("1997/08/25");
+		
+		book3.setAuthor("정태호");
+		book3.setDescription("복잡한 수식의 원리부터 함수 설명까지! 대충 쓰던 엑셀, 이 책 한 권만 보면 실력자 된다! 109가지 실무 예제와 함께 배우는 엑셀웍스의 명품 강의를 책으로!");
+		book3.setPublisher("이지스퍼블리싱");
+		book3.setUnitsInstock(100);
+		book3.setReleaseDate("1997/08/25");
+	}
+	
+	@Override
+  public	List<Book> getAllBookList(){
+		return listOfBooks;
+	}
+	
+}

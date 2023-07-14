@@ -1,0 +1,5 @@
+package com.tjoeun.repository;
+
+public interface BookRepository {
+
+}

@@ -1,0 +1,11 @@
+package com.tjoeun.security;
+
+public class CustomLoginSuccessHandler implements AuthenticationSuccessHandler {
+	
+	private void onAuthenticationSuccess
+		(HttpServletRequest request, HttpServletResponse response,
+				AuthenticationSuccessHandler) {
+		
+
+	}
+}

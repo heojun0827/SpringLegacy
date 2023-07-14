@@ -1,0 +1,7 @@
+package com.tjoeun.domain;
+
+public class MemberVO {
+	private String userid;
+	private String userpw;
+	private String
+}

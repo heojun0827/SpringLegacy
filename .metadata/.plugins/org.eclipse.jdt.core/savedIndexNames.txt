@@ -1,0 +1,23 @@
+INDEX VERSION 1.131+D:\gjwns\workspace-sts-3.9.18.RELEASE\.metadata\.plugins\org.eclipse.jdt.core
+1527321274.index
+2756132192.index
+2076837501.index
+62608308.index
+2906637533.index
+2924589527.index
+3711971416.index
+4226397633.index
+3512773114.index
+3022787002.index
+3571891598.index
+125708021.index
+1865797976.index
+780847704.index
+2707593064.index
+3540182151.index
+4121393285.index
+1037982673.index
+549760009.index
+3922215027.index
+65432381.index
+3432626621.index

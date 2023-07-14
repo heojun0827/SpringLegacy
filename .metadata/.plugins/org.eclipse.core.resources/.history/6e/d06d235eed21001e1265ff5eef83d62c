@@ -1,0 +1,5 @@
+package com.tjoeun.security;
+
+public class CustomAccessDeniedHandler {
+	
+}
