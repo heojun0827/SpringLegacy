@@ -1,3 +1,10 @@
 
 7월 12, 2023 11:30:39.357 NEW SESSION
 7월 12, 2023 11:30:39.357 [6788:11620:0712/113039.355:ERROR:interface_endpoint_client.cc(697)] Message 0 rejected by interface blink.mojom.WidgetHost
+
+7월 17, 2023 10:50:46.374 NEW SESSION
+7월 17, 2023 10:50:46.374 [12788:10936:0717/105046.372:ERROR:cert_verify_proc_builtin.cc(702)] CertVerifyProcBuiltin for image.castingn.com failed:
+7월 17, 2023 10:50:46.374 ----- Certificate i=0 (CN=image.castingn.com) -----
+7월 17, 2023 10:50:46.374 ERROR: Time is after notAfter
+7월 17, 2023 10:50:46.374 
+7월 17, 2023 10:50:46.374 
