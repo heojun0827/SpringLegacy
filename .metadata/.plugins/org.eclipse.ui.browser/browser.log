@@ -8,3 +8,7 @@
 7월 17, 2023 10:50:46.374 ERROR: Time is after notAfter
 7월 17, 2023 10:50:46.374 
 7월 17, 2023 10:50:46.374 
+
+7월 18, 2023 11:09:21.475 NEW SESSION
+7월 18, 2023 11:09:21.475 [11804:12620:0718/110921.474:ERROR:interface_endpoint_client.cc(697)] Message 1 rejected by interface blink.mojom.WidgetHost
+7월 18, 2023 13:45:18.06 [11804:12620:0718/134518.006:ERROR:interface_endpoint_client.cc(697)] Message 0 rejected by interface blink.mojom.WidgetHost

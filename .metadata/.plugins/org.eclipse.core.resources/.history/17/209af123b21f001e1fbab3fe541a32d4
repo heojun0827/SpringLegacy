@@ -1,8 +1,0 @@
-package com.tjoeun.domain;
-
-import lombok.Data;
-
-@Data
-public class Book {
-
-}

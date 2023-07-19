@@ -3,5 +3,5 @@
 <aop-project name="securitytest"/>
 <aop-project name="book"/>
 <aop-project name="springsecuritylogin"/>
-<aop-project name="jejuproject"/>
+<aop-project name="matjip"/>
 </aop-reference-model>
