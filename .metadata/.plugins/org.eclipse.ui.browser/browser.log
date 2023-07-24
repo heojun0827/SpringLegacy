@@ -12,3 +12,7 @@
 7월 18, 2023 11:09:21.475 NEW SESSION
 7월 18, 2023 11:09:21.475 [11804:12620:0718/110921.474:ERROR:interface_endpoint_client.cc(697)] Message 1 rejected by interface blink.mojom.WidgetHost
 7월 18, 2023 13:45:18.06 [11804:12620:0718/134518.006:ERROR:interface_endpoint_client.cc(697)] Message 0 rejected by interface blink.mojom.WidgetHost
+
+7월 24, 2023 09:36:35.597 NEW SESSION
+7월 24, 2023 09:36:35.597 [10632:8652:0724/093635.596:ERROR:feature_processor_state.cc(39)] Processing error occured: model WebAppInstallationPromo failed with UkmEngineDisabled, message: 
+7월 24, 2023 09:53:40.605 [10632:8652:0724/095340.605:ERROR:device_event_log_impl.cc(222)] [09:53:40.604] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: ��Ұ� �����ϴ�. (0x490)

@@ -12,7 +12,7 @@
 		Controller 로 loading 함 -->
 	<annotation-driven />
 
-	<!-- 정적 파일 (.jsp, etc)에 대한 경로 설정 -->
+	<!-- 정적 파일 (사진, etc)에 대한 경로 설정 -->
 	<resources mapping="/resources/**" location="/resources/" />
 
 	<!-- 리졸버에 대한 접두사와 접미사 설정 -->
@@ -27,7 +27,7 @@
 		<beans:property name="locations">
 			<beans:list>
 				<beans:value>/WEB-INF/properties/db.properties</beans:value>
-				<beans:value>/WEB-INF/properties/option.properties</beans:value>				
+				<beans:value>/WEB-INF/properties/option.properties</beans:value>
 			</beans:list>
 		</beans:property>
 	</beans:bean>
@@ -36,6 +36,7 @@
 	<context:component-scan	base-package="com.matjip.controller" />
 	<context:component-scan base-package="com.matjip.dao" />
 	<context:component-scan base-package="com.matjip.service" />
+
 
 	<!-- BasicDataSource : 데이터베이스 접속정보를 관리하는 Bean -->
 	<beans:bean class="org.apache.commons.dbcp2.BasicDataSource" id="basic_data_source">
@@ -46,13 +47,13 @@
 	</beans:bean>
 
 	<!-- Query 문과 Database 접속 정보를 관리하는 Bean -->
-	<beans:bean class="org.mybatis.spring.SqlSessionFactoryBean" id="sqlSession">
+	<beans:bean class="org.mybatis.spring.SqlSessionFactoryBean"	id="sqlSession">
 		<beans:property name="dataSource"	ref="basic_data_source" />
 		<beans:property name="mapperLocations"	value="/WEB-INF/mapper/*.xml" />
 	</beans:bean>
 
 	<!-- Query 문 실행을 위한 Bean(Mapper 관리) -->
-	<beans:bean class="org.mybatis.spring.SqlSessionTemplate" id="sqlSessionTemplate">
+	<beans:bean class="org.mybatis.spring.SqlSessionTemplate"	id="sqlSessionTemplate">
 		<beans:constructor-arg index="0"	ref="sqlSession" />
 	</beans:bean>
 
@@ -72,6 +73,25 @@
 
 	<!-- StandardServletMultipartResolver 등록 -->
 	<beans:bean	class="org.springframework.web.multipart.support.StandardServletMultipartResolver" id="multipartResolver" />
-
+	
+	<!-- interceptor -->
+	<interceptors>
+		<interceptor>
+			<mapping path="/review/updateReview"/>
+			<mapping path="/review/deleteReview"/>
+			<beans:bean class="com.matjip.interceptor.ReviewInterceptor" />
+		</interceptor>
+		<interceptor>
+			<mapping path="user/**"/>
+			<mapping path="/restaurant/**"/>
+			<mapping path="/review/**"/>
+			<exclude-mapping path="/restaurant/main"/>
+			<exclude-mapping path="/user/login"/>
+			<exclude-mapping path="/user/login_prodedure"/>
+			<exclude-mapping path="/user/join"/>
+			<exclude-mapping path="/user/join_prodedure"/>
+			<beans:bean class="com.matjip.interceptor.UserInterceptor" />
+		</interceptor>
+	</interceptors>
 
 </beans:beans>

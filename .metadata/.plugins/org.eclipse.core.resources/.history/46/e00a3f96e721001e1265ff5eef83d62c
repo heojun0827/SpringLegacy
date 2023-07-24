@@ -1,8 +1,0 @@
-package com.tjoeun.controller;
-
-import org.springframework.stereotype.Controller;
-@Log4j
-@Controller
-public class TestController {
-
-}

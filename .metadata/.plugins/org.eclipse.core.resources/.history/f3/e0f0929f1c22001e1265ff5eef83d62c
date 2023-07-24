@@ -1,6 +1,0 @@
-package com.tjoeun.mapper;
-
-public interface MemberMapper {
-	
-	public MemberVo read(String userid);
-}
