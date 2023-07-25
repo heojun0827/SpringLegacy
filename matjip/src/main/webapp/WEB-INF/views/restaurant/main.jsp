@@ -21,6 +21,18 @@
 </head>
 <body>
 
+<script>
+function cateSelect()(){
+    var cateSelect = document.getElementById("rs_region_cate");
+     
+    // select element에서 선택된 option의 value가 저장된다.
+    var selectValue = cateSelect.options[cateSelect.selectedIndex].value;
+ 
+    // select element에서 선택된 option의 text가 저장된다.
+    var selectText = cateSelect.options[cateSelect.selectedIndex].text;
+}
+</script>
+
 <!-- Header -->
 <c:import url="/WEB-INF/views/include/top_menu.jsp"></c:import>	
 
@@ -29,6 +41,26 @@
 	<div class="card shadow">
 		<div class="card-body">
 			<h4 class="card-title">맛집리스트보기</h4>
+			<form>
+			<label for="rs_region_cate"> 지역분류 </label>
+						  <select id="rs_region_cate" name="rs_region_cate" onchange="cateSelect()">
+						   <option value="">-- 선택하세요 --</option>
+					   		<optgroup label="지역분류">
+						  	 <option value="01">서귀포</option>
+						 	 <option value="02">제주</option>
+							</optgroup>
+						</select><br>
+						 <label for="rs_food_cate"> 음식분류 </label>
+						 	 <select id="rs_food_cate" name="rs_food_cate">
+						  	 <option value="">-- 선택하세요 --</option>
+						   		<optgroup label="음식분류">
+						   			<option value="01">음식</option>
+						 			<option value="02">카페</option>
+								</optgroup>
+					   </select>
+						<div class="text-right">
+						</div>
+					</form>
 			<table class="table table-hover" id='restList'>
 				<thead>
 					<tr>

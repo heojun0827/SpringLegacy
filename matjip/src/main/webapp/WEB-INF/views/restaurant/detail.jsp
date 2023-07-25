@@ -67,9 +67,10 @@
 					<div class="form-group">
 						<div class="text-right">
 							<a href="${root}/restaurant/main?page=${page}" class="btn btn-primary">목록보기</a>
+							<c:if test="${sid == 'admin'}">
 							<a href="${root}/restaurant/modify?rs_idx=${rs_idx}&page=${page}" class="btn btn-info">수정하기</a>
 							<a href="${root}/restaurant/delete?rs_idx=${rs_idx}&page=${page}" class="btn btn-danger">삭제하기</a>
-							<%-- <c:if test="${loginUserBean.user_id == noticeDetailBean.user_id }"></c:if> --%>
+							</c:if>
 						</div>
 					</div>					
 				</div>

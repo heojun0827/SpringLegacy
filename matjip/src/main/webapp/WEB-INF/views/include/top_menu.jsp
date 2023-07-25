@@ -21,8 +21,8 @@
 		<div class="navbar navbar-expand-lg">
 			<ul class="nav nav-pills">
 				<li class="nav-item"><a class="nav-link"
-					href="/restaurant/main">맛집리스트</a></li>
-				<li class="nav-item"><a class="nav-link" href="/review">리뷰</a></li>
+					href="${root }restaurant/main">맛집리스트</a></li>
+				<li class="nav-item"><a class="nav-link" href="${root }review/main">리뷰</a></li>
 				<li class="nav-item"><a class="nav-link"
 					href="${root }notice/main">공지사항</a></li>
 				<li class="nav-item"><a class="nav-link" href="${root }qna/main">QnA</a></li>

@@ -16,3 +16,14 @@
 7월 24, 2023 09:36:35.597 NEW SESSION
 7월 24, 2023 09:36:35.597 [10632:8652:0724/093635.596:ERROR:feature_processor_state.cc(39)] Processing error occured: model WebAppInstallationPromo failed with UkmEngineDisabled, message: 
 7월 24, 2023 09:53:40.605 [10632:8652:0724/095340.605:ERROR:device_event_log_impl.cc(222)] [09:53:40.604] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: ��Ұ� �����ϴ�. (0x490)
+
+7월 25, 2023 10:08:26.661 NEW SESSION
+7월 25, 2023 10:08:26.661 [8740:4272:0725/100826.660:ERROR:feature_processor_state.cc(39)] Processing error occured: model WebAppInstallationPromo failed with UkmEngineDisabled, message: 
+7월 25, 2023 10:14:32.533 [8740:4272:0725/101432.532:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+7월 25, 2023 13:43:03.467 [8740:4272:0725/134303.467:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+7월 25, 2023 16:49:48.750 [8740:4272:0725/164948.750:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.057 s for first_image_paint 0.044 s
+7월 25, 2023 16:49:48.861 [8740:4272:0725/164948.860:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.057 s for first_image_paint 0.044 s
+7월 25, 2023 16:49:49.359 [8740:4272:0725/164949.359:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.057 s for first_image_paint 0.044 s
+7월 25, 2023 16:49:51.471 [8740:4272:0725/164951.471:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.057 s for first_image_paint 0.044 s
+7월 25, 2023 16:49:51.822 [8740:4272:0725/164951.822:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.057 s for first_image_paint 0.044 s
+7월 25, 2023 16:49:51.834 [8740:4272:0725/164951.834:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.057 s for first_image_paint 0.044 s
