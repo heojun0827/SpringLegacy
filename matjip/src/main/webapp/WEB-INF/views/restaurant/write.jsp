@@ -52,18 +52,18 @@
 					<label for="rs_region_cate"> 지역분류 </label>
 						  <select id="rs_region_cate" name="rs_region_cate">
 						   <option value="">-- 선택하세요 --</option>
-					   		<optgroup label="지역분류">
-						  	 <option value="01">서귀포</option>
-						 	 <option value="02">제주</option>
-							</optgroup>
-						</select><br>
+						   <optgroup label="지역분류">
+						   <option value="01">서귀포</option>
+						  <option value="02">제주도</option>
+					</optgroup>
+					</select><br>
 						  <label for="rs_food_cate"> 음식분류 </label>
-						 	 <select id="rs_food_cate" name="rs_food_cate">
-						  	 <option value="">-- 선택하세요 --</option>
-						   		<optgroup label="음식분류">
-						   			<option value="01">음식</option>
-						 			<option value="02">카페</option>
-								</optgroup>
+						  <select id="rs_food_cate" name="rs_food_cate">
+						   <option value="">-- 선택하세요 --</option>
+						   <optgroup label="음식분류">
+						   <option value="01">음식</option>
+						  <option value="02">카페</option>
+					</optgroup>
 					</select>
 						<div class="text-right">
 							<form:button class="btn btn-primary">작성하기</form:button>

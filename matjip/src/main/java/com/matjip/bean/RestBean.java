@@ -15,7 +15,7 @@ public class RestBean {
 	private String rs_addr;					// 주소
 	private String rs_food_cate;		// 음식분류  식사/디저트
 	private String rs_region_cate;	// 지역분류 서귀포/제주
-	
+	private double average;					//	index에 노출할 평점
 	//첨부파일 rs_file -> upload_file 로 변경
   private MultipartFile upload_file;
   //food_cate
