@@ -27,3 +27,15 @@
 7월 25, 2023 16:49:51.471 [8740:4272:0725/164951.471:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.057 s for first_image_paint 0.044 s
 7월 25, 2023 16:49:51.822 [8740:4272:0725/164951.822:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.057 s for first_image_paint 0.044 s
 7월 25, 2023 16:49:51.834 [8740:4272:0725/164951.834:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.057 s for first_image_paint 0.044 s
+
+7월 28, 2023 09:37:57.192 NEW SESSION
+7월 28, 2023 09:37:57.192 [12768:1080:0728/093757.192:ERROR:feature_processor_state.cc(39)] Processing error occured: model WebAppInstallationPromo failed with UkmEngineDisabled, message: 
+7월 28, 2023 09:38:25.872 [12768:1080:0728/093825.872:ERROR:device_event_log_impl.cc(222)] [09:38:25.876] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: ��Ұ� �����ϴ�. (0x490)
+7월 28, 2023 09:38:25.872 [12768:1080:0728/093825.872:ERROR:device_event_log_impl.cc(222)] [09:38:25.879] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: ��� ������ �����Ͱ� �����ϴ�. (0x103)
+
+7월 28, 2023 10:42:49.103 NEW SESSION
+7월 28, 2023 10:42:49.103 [7380:13796:0728/104249.101:ERROR:feature_processor_state.cc(39)] Processing error occured: model WebAppInstallationPromo failed with UkmEngineDisabled, message: 
+
+7월 28, 2023 12:19:28.140 NEW SESSION
+7월 28, 2023 12:19:28.141 [5768:3388:0728/121928.139:ERROR:feature_processor_state.cc(39)] Processing error occured: model WebAppInstallationPromo failed with UkmEngineDisabled, message: 
+7월 28, 2023 14:12:08.837 [5768:3388:0728/141208.837:ERROR:device_event_log_impl.cc(222)] [14:12:08.837] Bluetooth: bluetooth_adapter_winrt.cc:1058 Getting Default Adapter failed.

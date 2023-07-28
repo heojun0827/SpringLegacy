@@ -24,7 +24,7 @@ public class ReviewBean {
 	@NotNull
 	@Max(value = 5)
 	@Min(value = 1)
-	private int rev_score = 5;
+	private Integer rev_score = 5; //int 일때 @NotNull validation이 적용이 안돼서 Integer로 수정하였습니다
 	
 	//@NotNull 잘못된 접근입니다.(rev_id?)
 	private String rev_id;
