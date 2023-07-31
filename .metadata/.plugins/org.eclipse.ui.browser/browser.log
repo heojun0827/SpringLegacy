@@ -39,3 +39,7 @@
 7월 28, 2023 12:19:28.140 NEW SESSION
 7월 28, 2023 12:19:28.141 [5768:3388:0728/121928.139:ERROR:feature_processor_state.cc(39)] Processing error occured: model WebAppInstallationPromo failed with UkmEngineDisabled, message: 
 7월 28, 2023 14:12:08.837 [5768:3388:0728/141208.837:ERROR:device_event_log_impl.cc(222)] [14:12:08.837] Bluetooth: bluetooth_adapter_winrt.cc:1058 Getting Default Adapter failed.
+
+7월 31, 2023 09:55:35.11 NEW SESSION
+7월 31, 2023 09:55:35.11 [9456:8336:0731/095535.010:ERROR:feature_processor_state.cc(39)] Processing error occured: model WebAppInstallationPromo failed with UkmEngineDisabled, message: 
+7월 31, 2023 12:08:53.78 [5620:11108:0731/120853.078:ERROR:feature_processor_state.cc(39)] Processing error occured: model WebAppInstallationPromo failed with UkmEngineDisabled, message: 

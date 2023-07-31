@@ -27,7 +27,7 @@
        <link href="${pageContext.request.contextPath}/resources/css/carousel.css" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="${pageContext.request.contextPath}/resources/js/color-modes.js"></script>
-   
+ <!--   
    <style>
       .container-wrap {
          margin-top: 120px;
@@ -43,16 +43,15 @@
          display: flex;
          margin: 0 auto;
       }
-   </style>
+   </style> -->
 </head>
 <body>
 
 <!-- Header -->
 <c:import url="/WEB-INF/views/include/top_menu.jsp"></c:import>   
 
-<div class="container" style="margin-top:100px; height: auto;">
+<div class="container" style="margin-top:100px">
    <div class="row">
-      <!-- <div class="col-sm-3"></div> -->
       <div class="col-sm-12">
          <div class="card shadow">
             <div class="card-body" style="text-align: left;">
@@ -97,7 +96,7 @@
                      <c:if test="${sid == 'admin'}">
                              <a href="${root}/restaurant/modify?rs_idx=${rs_idx}&page=${page}" class="btn btn-warning">수정하기</a>
                              <a href="${root}/restaurant/delete?rs_idx=${rs_idx}&page=${page}" class="btn btn-danger">삭제하기</a>
-                          </c:if>
+                     </c:if>
                      <%-- <c:if test="${loginUserBean.user_id == noticeDetailBean.user_id }"></c:if> --%>
                   </div>
                </div>               
@@ -123,13 +122,9 @@
                      <th class="text-center d-none d-md-table-cell">${review.rev_title }</th><!-- 제목 -->
                      <th>
                      <!-- 별점 -->
-                        <c:choose>
-                           <c:when test="${review.rev_score eq 5 }"><h7>★★★★★</h7></c:when>
-                           <c:when test="${review.rev_score eq 4 }"><h7>★★★★</h7></c:when>
-                           <c:when test="${review.rev_score eq 3 }"><h7>★★★</h7></c:when>
-                           <c:when test="${review.rev_score eq 2 }"><h7>★★</h7></c:when>
-                           <c:otherwise><h7>★</h7></c:otherwise>
-                        </c:choose>
+                        <c:forEach begin="1" end="${review.rev_score }" step="1">
+                           <h7>★</h7>
+                        </c:forEach>
                      </th>
                      <th class="text-center d-none d-md-table-cell">${review.rev_id }</th><!-- 리뷰어 -->
                      <th class="text-center d-none d-md-table-cell"><c:if test="${!empty review.rev_file }"><!-- 이미지 -->
@@ -201,7 +196,6 @@
             </div>
          </div>
       </div>
-      <!-- <div class="col-sm-3"></div> -->
    </div>
 <script>
    function imgPop(i){

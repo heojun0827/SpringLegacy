@@ -28,7 +28,7 @@
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="${pageContext.request.contextPath}/resources/js/color-modes.js"></script>
 	
-	<style>
+<!-- 	<style>
 		.container-wrap {
 			margin-top: 120px;
 			position: relative;
@@ -43,7 +43,7 @@
 			display: flex;
 			margin: 0 auto;
 		}
-	</style>
+	</style> -->
 </head>
 <body>
 

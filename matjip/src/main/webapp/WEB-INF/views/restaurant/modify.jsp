@@ -27,7 +27,7 @@
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="${pageContext.request.contextPath}/resources/js/color-modes.js"></script>
 
-	</style>
+
 </head>
 <body>
 
@@ -35,9 +35,8 @@
 <c:import url="/WEB-INF/views/include/top_menu.jsp"></c:import>	
 <!-- restaurant/modify -->
 <div class="container" style="margin-top:100px">
-	<div class="row">
-		<div class="col-sm-3"></div>
-		<div class="col-sm-6">
+   <div class="row">
+      <div class="col-sm-12">
 			<div class="card shadow">
 				<div class="card-body">
 					<form:form action="/restaurant/modify_procedure" method="post" modelAttribute="modifyRestBean" enctype="multipart/form-data">
@@ -47,6 +46,7 @@
 						<h3 class="text-center card-title"><strong>맛집 리스트 상세수정</strong></h3>
 							<form:label path="rs_name">이름</form:label>
 							<form:input path="rs_name" class="form-control"/>
+							<form:errors path="rs_name" style="color:red;" /><br>
 						</div>
 						<div class="form-group">
 							<form:label path="rs_region_cate">지역분류</form:label>
@@ -77,6 +77,7 @@
 						<div class="form-group">
 							<form:label path="rs_content">내용</form:label>
 							<form:textarea path="rs_content" class="form-control" rows="10" style="resize:none"/>
+							<form:errors path="rs_content" style="color:red;" /><br>
 						</div>
 						<div class="form-group">
 							<form:label path="rs_file">첨부 이미지</form:label>
@@ -96,7 +97,6 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-sm-3"></div>
 	</div>
 </div>
 

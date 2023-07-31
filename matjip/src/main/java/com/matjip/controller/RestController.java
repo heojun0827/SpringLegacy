@@ -203,7 +203,8 @@ public class RestController {
 	}
 
 	@GetMapping("/modify")
-	public String restModify(@RequestParam("rs_idx") int rs_idx, @RequestParam("page") int page,
+	public String restModify(@Valid @RequestParam("rs_idx") int rs_idx,
+													 @RequestParam("page") int page,
 							 @ModelAttribute("modifyRestBean") RestBean modifyRestBean, Model model) {
 
 		model.addAttribute("rs_idx", rs_idx);
@@ -224,14 +225,23 @@ public class RestController {
 	}
 
 	@PostMapping("/modify_procedure")
-	public String modifyProcedure(@Valid @ModelAttribute("modifyRestBean") RestBean modifyRestBean, 
-								  BindingResult result,	Model model, @RequestParam("page") int page) {
+	public String modifyProcedure(@RequestParam("rs_idx") int rs_idx,
+																@Valid @ModelAttribute("modifyRestBean") RestBean modifyRestBean, 
+																BindingResult result,	Model model, @RequestParam("page") int page) {
 
 		model.addAttribute("page", page);
 		if (result.hasErrors()) {
 			System.out.println("에러O");
 			System.out.println(result.getAllErrors());
-
+			
+		// 수정페이지에 출력할 데이터 가져오기
+			List<FoodBean> foodList = restService.getFoodTable();
+			System.out.println(foodList);
+			model.addAttribute("foodList", foodList);
+			List<RegionBean> regionList = restService.getRegionTable();
+			System.out.println(regionList);
+			model.addAttribute("regionList", regionList);
+			
 			return "restaurant/modify";
 		}
 		restService.modifyRestInfo(modifyRestBean);
