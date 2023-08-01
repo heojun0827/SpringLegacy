@@ -43,3 +43,6 @@
 7월 31, 2023 09:55:35.11 NEW SESSION
 7월 31, 2023 09:55:35.11 [9456:8336:0731/095535.010:ERROR:feature_processor_state.cc(39)] Processing error occured: model WebAppInstallationPromo failed with UkmEngineDisabled, message: 
 7월 31, 2023 12:08:53.78 [5620:11108:0731/120853.078:ERROR:feature_processor_state.cc(39)] Processing error occured: model WebAppInstallationPromo failed with UkmEngineDisabled, message: 
+
+8월 01, 2023 11:19:36.128 NEW SESSION
+8월 01, 2023 11:19:36.128 [15324:7460:0801/111936.127:ERROR:feature_processor_state.cc(39)] Processing error occured: model WebAppInstallationPromo failed with UkmEngineDisabled, message: 

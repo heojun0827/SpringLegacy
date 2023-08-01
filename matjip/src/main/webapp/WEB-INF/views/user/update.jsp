@@ -25,32 +25,40 @@
       } // resetUserIdExist
       
       function joinCheck(f){
-			if(f.user_pw.value!=f.user_pw2.value){
-				alert("변경한 비밀번호와 비밀번호 확인이 서로 다릅니다.");
-				f.user_pw.focus();
-				return false;
-			}
-		}
-      const regExpS = /[!?@#$%^&*():;+-=~{}<>\_\[\]\|\\\"\'\,\.\/\`\₩]/g;
-      const regExpK = /[ㄱ-ㅎㅏ-ㅣ가-힣]/g;
-      const regExpN = /[0-9]/g;
-      const regExpE = /[a-zA-Z]/g;
-      
-      //   이름 제약 조건
-      if(regExpK.test(f.user_name) && f.user_name.length === 2){
-         return true;
-      } else {
-         alert("이름은 한글 2자 이상 입력하세요.")
-         f.user_name.focus()
-         return false;
-      }
-      if(regExpS.test(f.user_name)){
-         alert("이름에는 특수문자가 포함될 수 없습니다.")
-         f.user_name.focus()
-         return false;
-      } else {
-         return true;
-      }
+          if(f.user_pw.value!=f.user_pw2.value){
+             alert("변경한 비밀번호와 비밀번호 확인이 서로 다릅니다.");
+             f.user_pw.focus();
+             return false;
+          }
+          if(!f.user_pw.value || !f.user_pw2.value){
+             alert("비밀번호를 확인하세요.");
+             f.user_pw.focus();
+             return false;
+          }
+          if(f.user_name.value.length < 2){
+             alert("이름은 최소 2글자 이상 입력하세요.");
+             f.user_name.focus();
+             return false;
+          } else if(f.user_name.value.length > 6){
+             alert("이름은 최대 6글자까지 입력 가능합니다.");
+             f.user_name.focus();
+             return false;
+          }
+          if(f.user_phone.value.length < 9){
+             alert("연락처는 최소 10자리 이상 입력하세요.");
+             f.user_phone.focus();
+             return false;
+          }
+          if(f.user_email.value.indexOf("@") == -1){
+             alert("이메일 주소를 확인하세요.");
+             f.user_email.focus();
+             return false;
+          } else if(f.user_email.value.indexOf(".") == -1){
+             alert("이메일 주소를 확인하세요.");
+             f.user_email.focus();
+             return false;
+          }
+       }
       
    }
    function yesOrNo(){
