@@ -2,7 +2,8 @@
 <aop-reference-model>
 <aop-project name="securitytest"/>
 <aop-project name="book"/>
-<aop-project name="springsecuritylogin"/>
 <aop-project name="matjip"/>
+<aop-project name="springsecuritylogin"/>
+<aop-project name="mall2"/>
 <aop-project name="pro05"/>
 </aop-reference-model>
