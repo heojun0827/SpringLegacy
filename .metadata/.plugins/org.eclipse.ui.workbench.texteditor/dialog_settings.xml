@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value=""/>
+		<item key="selection" value="save"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="persist"/>
-			<item value="persistence"/>
-			<item value="persistense"/>
-			<item value="jpa"/>
 			<item value="save"/>
 			<item value="mysql-connector-java"/>
 			<item value="mysql"/>
@@ -23,6 +19,10 @@
 			<item value="version"/>
 			<item value="hikari"/>
 			<item value="log4"/>
+			<item value="scan"/>
+			<item value="query"/>
+			<item value="qu"/>
+			<item value="reviewByResId"/>
 		</list>
 		<list key="replacehistory">
 			<item value="/"/>
